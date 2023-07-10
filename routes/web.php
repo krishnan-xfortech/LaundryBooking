@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::group(['prefix' => 'Admin'], function () {
+Route::get('login', [\App\Http\Livewire\Admin\Auth\Login::class, '__invoke']);
+Route::get('dashboard', [\App\Http\Livewire\Admin\Dashboard::class, '__invoke']);
+Route::group(['prefix' => 'Order'], function () {
+Route::get('orders', [\App\Http\Livewire\Admin\Orders\Order::class, '__invoke']);
+});
+});
