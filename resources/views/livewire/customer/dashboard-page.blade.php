@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <div class="flex flex-col w-full h-[100vh] items-center bg-slate-200 gap-2">
         <div class="flex w-[99%] h-10 justify-between items-center bg-white rounded-lg mt-2">
             <div class="flex h-10 gap-2 items-center">
@@ -20,10 +19,10 @@
                         d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
                 </svg>
                 {{-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                </svg> --}}
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg> --}}
                 <button class="w-20 h-10">Login</button>
             </div>
         </div>
@@ -40,22 +39,26 @@
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="https://cdn.pixabay.com/photo/2017/05/06/10/50/concept-2289498_1280.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="/docs/images/carousel/carousel-3.svg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
                     </div>
                     <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="/docs/images/carousel/carousel-4.svg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
                     </div>
                     <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="/docs/images/carousel/carousel-5.svg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
                     </div>
                 </div>
                 <!-- Slider indicators -->
@@ -92,8 +95,8 @@
                         class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 9 4-4-4-4" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 9 4-4-4-4" />
                         </svg>
                         <span class="sr-only">Next</span>
                     </span>
@@ -101,7 +104,8 @@
             </div>
         </div>
 
-        <div class="flex flex-col w-[99%] h-[250px] py-10 justify-center items-center px-10 bg-white rounded-lg relative">
+        <div
+            class="flex flex-col w-[99%] h-[250px] py-10 justify-center items-center px-10 bg-white rounded-lg relative">
             <div class="flex w-full h-20 justify-center items-center">
                 <span class="text-xl font-semibold">Our Services</span>
             </div>
@@ -142,7 +146,8 @@
                 </svg>
                 <blockquote>
                     <p class="text-xl italic font-medium">"Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Quibusdam, eaque reprehenderit nemo fugiat nesciunt magnam aliquam accusantium"
+                        adipisicing elit. Quibusdam, eaque reprehenderit nemo fugiat nesciunt magnam aliquam
+                        accusantium"
                     </p>
                 </blockquote>
                 <figcaption class="flex items-center justify-center mt-6 space-x-3">
@@ -158,7 +163,7 @@
         </div>
 
         <div class="flex w-full h-10 bg-slate-100">
-            
+
         </div>
 
         <footer class="rounded-lg mt-3 w-full h-40">
@@ -190,16 +195,16 @@
         </footer>
 
         {{-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-        </script>
-        <script>
-            var myModal = new bootstrap.Modal(document.getElementById('location_modal'));
-            $(document).ready(function() {
-                myModal.show();
-            });
-        </script> --}}
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+            </script>
+            <script>
+                var myModal = new bootstrap.Modal(document.getElementById('location_modal'));
+                $(document).ready(function() {
+                    myModal.show();
+                });
+            </script> --}}
     </div>
-@endsection
+</div>

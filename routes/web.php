@@ -13,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('get_location');
-});
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Livewire\Customer\EntryPage::class, '__invoke']);
+Route::get('/welcome', [\App\Http\Livewire\Customer\DashboardPage::class, '__invoke']);
+
+
 Route::group(['prefix' => 'Admin'], function () {
 Route::get('login', [\App\Http\Livewire\Admin\Auth\Login::class, '__invoke']);
 Route::get('dashboard', [\App\Http\Livewire\Admin\Dashboard::class, '__invoke']);
